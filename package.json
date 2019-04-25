@@ -1,0 +1,14 @@
+{
+  "name": "radarshow",
+  "version": "1.0.0",
+  "description": "Program to show Radar data processed",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Jiang, Hunk; Chen, Luis",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^5.0.0"
+  }
+}
