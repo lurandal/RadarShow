@@ -1,11 +1,14 @@
 const { app, BrowserWindow } = require('electron')
 const { Menu } = require('electron')
+const { dialog } = require('electron')
 
 const template = [
   {
     label: 'File',
     submenu: [
-      { label: 'Open File' },
+      { label: 'Open File',
+        click() {dialog.showOpenDialog({properties: ['openFile']}, FileParsing()) }
+      },
       { label: 'Close Files' },
       { type: 'separator' },
       { label: 'Export to JPEG' },
